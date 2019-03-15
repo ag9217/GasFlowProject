@@ -6,5 +6,5 @@ Code which was made with my friend for our 2nd year Engineering Design Project. 
 All code can be run by using the Arduino IDE
 
 **Libraries required:**
-⋅⋅* Radiohead
-⋅⋅* Servotimer2 (Default servomotor library conflicts with RF library)
+* Radiohead
+* Servotimer2 (Default servomotor library conflicts with RF library)
