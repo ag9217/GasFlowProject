@@ -1,4 +1,4 @@
-## 2nd Year EDP Project
+## 2nd Year Engineering Design Project
 ### Gas flow controller
 
 Code which was made with my friend for our 2nd year Engineering Design Project. Both files are to be run on two different arduinos.
