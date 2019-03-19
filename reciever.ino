@@ -36,6 +36,7 @@ void loop()
     for(int i = 0; i < 2; i++)
     {
       lcd.print(char(buf[i]));
+      Serial.print(char(buf[i]));
     }
     lcd.print("%");
     delay(1000);

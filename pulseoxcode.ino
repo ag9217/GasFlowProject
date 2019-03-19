@@ -94,7 +94,6 @@ void loop()
    if (millis() - tsLastReport1 > REPORTING_PERIOD_MS) {
         lcd.clear();
         lcd.print("SpO2: ");
-        Serial.print("Hello");
         Serial.print("Heart rate:");
         Serial.print(pox.getHeartRate());
         
@@ -110,10 +109,10 @@ void loop()
         lcd.print(buf);
         lcd.print("%");
 
-//        if(val == 94){valmsg = "94";} if(val == 95){valmsg = "95";} if(val == 96){valmsg = "96";} if(val == 97){valmsg = "97";} 
-//        if(val == 98){valmsg = "98";} if(val == 99){valmsg = "99";} if(val == 93){valmsg = "93";} if(val == 92){valmsg = "92";}
-//        if(val == 0){valmsg = "00";}
-//        driver.send((uint8_t*)valmsg, strlen(valmsg)); //send message to pager
+        if(val == 94){valmsg = "94";} if(val == 95){valmsg = "95";} if(val == 96){valmsg = "96";} if(val == 97){valmsg = "97";} 
+        if(val == 98){valmsg = "98";} if(val == 99){valmsg = "99";} if(val == 93){valmsg = "93";} if(val == 92){valmsg = "92";}
+        if(val == 0){valmsg = "00";}
+        driver.send((uint8_t*)valmsg, strlen(valmsg)); //send message to pager
         
         //Serial.print(pox.getSpO2());
         Serial.print("% / temp:");
