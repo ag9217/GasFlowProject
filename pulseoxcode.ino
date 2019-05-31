@@ -151,11 +151,11 @@ void loop()
     if (abs(val-(int)buf) > sf && (millis() - tsLastReport3 > REPORTING_PERIOD_MS))
       {
           
-//          driver.send((uint8_t*)msg, strlen(valmsg));
+          driver.send((uint8_t*)msg, strlen(valmsg));
           
-//          Serial.print("BABY DEAD");  
-          //lcd.print(val);
-          //lcd.setCursor(0,1);
+          Serial.print("SPO2 LOW");  
+          lcd.print(val);
+          lcd.setCursor(0,1);
           tsLastReport3 = millis();
       }
     
