@@ -11,9 +11,8 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 void setup()
 {
-    Serial.begin(9600); // Debugging only
-    if (!driver.init())
-         Serial.println("init failed");
+  Serial.begin(9600); // Debugging only
+  if (!driver.init())  Serial.println("init failed");
 
   // set up the LCD's number of columns and rows:
   lcd.begin(16, 2);
@@ -21,7 +20,6 @@ void setup()
 
 void loop()
 {
-  
     //receiver code
     uint8_t buf[12];
     uint8_t buflen = sizeof(buf);
@@ -42,12 +40,4 @@ void loop()
     delay(1000);
     lcd.clear();
 
-    //transmitter code
-
-//      Serial.print((char*)buf);
-//      delay(1000);
-//      lcd.clear();
-
-      
-    //}
 }
